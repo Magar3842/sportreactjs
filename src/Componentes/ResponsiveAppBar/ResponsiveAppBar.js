@@ -12,10 +12,10 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import Carrito from '../Carrito/Carrito';
 
-
-const pages = ['Products', 'Category', 'Ckeckout'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const pages = ['Productos', 'Categorias', 'Checkout'];
+const settings = ['Profile', 'Account', 'Loguin', 'Logout'];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -56,7 +56,7 @@ const ResponsiveAppBar = () => {
               textDecoration: 'none',
             }}
           >
-            DECORATION INSPIRE
+            DECOR-INSPIRE
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -112,7 +112,7 @@ const ResponsiveAppBar = () => {
               textDecoration: 'none',
             }}
           >
-            DECORAION INSPIRE
+            LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
@@ -152,13 +152,13 @@ const ResponsiveAppBar = () => {
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
-              ))}
+                ))}
             </Menu>
-          </Box>
+            <Carrito/>
+           </Box>
         </Toolbar>
-      </Container>
+       </Container>
     </AppBar>
   );
 };
-
-export default ResponsiveAppBar
+export default ResponsiveAppBar;
