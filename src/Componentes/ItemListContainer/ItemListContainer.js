@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Spinner } from 'reactstrap';
+import Spinner from "react-bootstrap/Spinner";
 import ItemCard from "../ItemCard/ItemCard"
 
 const Products = [
@@ -89,7 +89,7 @@ const Products = [
         nombre: 'Lampara de mesa',
         categoria: 'Iluminacion',
         precio: 17000,
-        img: "./img/lampara de mesa 1.jpg",
+        img: "./img/lampara mesa 1.jpg",
         stock: 50,
         informacion: 'Producto de estilo moderlo que le dara un toque fresco y divertido a cualquier lugar donde se la ubique.'
     },
@@ -98,7 +98,7 @@ const Products = [
         nombre: 'Lampara de pie',
         categoria: 'Iluminacion',
         precio: 12500,
-        img: "./img/lampara de pie 3.jpg",
+        img: "./img/lampara pie 3.jpg",
         stock: 100,
         informacion: 'Producto con la sencillez y calidad propia para no pasar inadvertido.'
     },
@@ -156,6 +156,15 @@ const Products = [
         stock: 10,
         informacion: 'Original y de estilo combinable y reubicable.'
     },
+    {
+        id: 18,
+        nombre: 'Planta decoracion',
+        categoria: 'Varios',
+        precio: 3200,
+        img: "./img/planta decoracion 1.jpg",
+        stock: 10,
+        informacion: 'Decore su interior con plantas faciles de mantener y de gran versatilidad.'
+    },
 ]
 
 const ItemListContainer = () => {
@@ -195,17 +204,14 @@ const ItemListContainer = () => {
         
         {
             loading? 
-                <Spinner
-                    color="primary"
-                    type="grow"
-                ></Spinner>
+            <Spinner animation="border" />
                 :
                 <div className="row">
             
                     {
                         data.map((product) => (
                             <div className="col-4" key={product.id}>
-                                <ItemCard nombre={product.name} descripcion={product.descripcion} img={product.img} precio={product.precio} stock={product.stock}/>
+                                <ItemCard nombre={product.nombre} informacion={product.informacion} img={product.img} precio={product.precio} stock={product.stock}/>
                             </div>
                         ))
                     }

@@ -1,10 +1,10 @@
 import * as React from 'react';
-import Badge, { BadgeProps } from '@mui/material/Badge';
+import Badge from '@mui/material/Badge';
 import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
-const StyledBadge = styled(Badge)<BadgeProps>(({ theme }) => ({
+const StyledBadge = styled(Badge)(({ theme }) => ({
   '& .MuiBadge-badge': {
     right: -3,
     top: 13,
@@ -13,12 +13,14 @@ const StyledBadge = styled(Badge)<BadgeProps>(({ theme }) => ({
   },
 }));
 
-export default function Carrito() {
+ function Carrito() {
   return (
     <IconButton aria-label="cart">
-      <StyledBadge badgeContent={4} color="secondary">
+      <StyledBadge color="primary">
         <ShoppingCartIcon />
       </StyledBadge>
     </IconButton>
   );
 }
+
+export default Carrito
