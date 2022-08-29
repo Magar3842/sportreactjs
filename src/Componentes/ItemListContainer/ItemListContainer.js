@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react"
-import Spinner from "react-bootstrap/Spinner";
+// import Spinner from "react-bootstrap/Spinner";
 import ItemCard from "../ItemCard/ItemCard"
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
 
 const Products = [
     {
         id: 1,
-        nombre: 'Sillon 1 cuerpo',
+        nombre: 'Sillon Juanita',
         categoria: 'Sillones',
         precio: 65600,
         img: "./img/sillon 1 cuerpo amarillo.jpg",
@@ -14,7 +16,7 @@ const Products = [
     },
     {
         id: 2,
-        nombre: 'Sillon 1 cuerpo',
+        nombre: 'Sillon Maria Tudor',
         categoria: 'Sillones',
         precio: 95000,
         img: "./img/sillon 1 cuerpo blanco.jpg",
@@ -23,7 +25,7 @@ const Products = [
     },
     {
         id: 3,
-        nombre: 'Sillon 1 cuerpo',
+        nombre: 'Sillon Rosalia',
         categoria: 'Sillones',
         precio: 118500,
         img: "./img/sillon 1 cuerpo rojo.jpg",
@@ -32,7 +34,7 @@ const Products = [
     },
     {
         id: 4,
-        nombre: 'Sillon 2 cuerpos',
+        nombre: 'Sillon Lounge',
         categoria: 'Sillones',
         precio: 148500,
         img: "./img/sillon 2 cuerpos marron.jpg",
@@ -41,7 +43,7 @@ const Products = [
     },
     {
         id: 5,
-        nombre: 'Sillon 3 cuerpos',
+        nombre: 'Sillon Full Emotion',
         categoria: 'Sillones',
         precio: 178500,
         img: "./img/sillon 3 cuerpos marron.jpg",
@@ -50,7 +52,7 @@ const Products = [
     },
     {
         id: 6,
-        nombre: 'Juego de iluminacion techo',
+        nombre: 'Ligth One',
         categoria: 'Iluminacion',
         precio: 48900,
         img: "./img/iluminacion techo 1.jpg",
@@ -59,7 +61,7 @@ const Products = [
     },
     {
         id: 7,
-        nombre: 'Juego de iluminacion techo',
+        nombre: 'Ligth smooth',
         categoria: 'Iluminacion',
         precio: 36500,
         img: "./img/iluminacion techo 3.jpg",
@@ -68,7 +70,7 @@ const Products = [
     },
     {
         id: 8,
-        nombre: 'Juego de iluminacion de techo',
+        nombre: 'Ligth shadow',
         categoria: 'Iluminacion',
         precio: 7000,
         img: "./img/iluminacion techo 4.jpg",
@@ -77,7 +79,7 @@ const Products = [
     },
     {
         id: 9,
-        nombre: 'Lampara de mesa',
+        nombre: 'Ligth tonic',
         categoria: 'Iluminacion',
         precio: 27000,
         img: "./img/lampara de mesa 2.jpg",
@@ -86,7 +88,7 @@ const Products = [
     },
     {
         id: 10,
-        nombre: 'Lampara de mesa',
+        nombre: 'Ligth pinapple',
         categoria: 'Iluminacion',
         precio: 17000,
         img: "./img/lampara mesa 1.jpg",
@@ -95,7 +97,7 @@ const Products = [
     },
     {
         id: 11,
-        nombre: 'Lampara de pie',
+        nombre: 'Ligth modern',
         categoria: 'Iluminacion',
         precio: 12500,
         img: "./img/lampara pie 3.jpg",
@@ -104,7 +106,7 @@ const Products = [
     },
     {
         id: 12,
-        nombre: 'Pintura moderna',
+        nombre: 'Sarah',
         categoria: 'Arte',
         precio: 15000,
         img: "./img/pintura moderna 1.jpg",
@@ -113,7 +115,7 @@ const Products = [
     },
     {
         id: 13,
-        nombre: 'Pintura moderna',
+        nombre: 'Flower spring',
         categoria: 'Arte',
         precio: 7300,
         img: "./img/pintura moderna 2.jpg",
@@ -122,7 +124,7 @@ const Products = [
     },
     {
         id: 14,
-        nombre: 'Pintura moderna',
+        nombre: 'Creation',
         categoria: 'Arte',
         precio: 25000,
         img: "./img/pintura moderna 4.jpg",
@@ -131,7 +133,7 @@ const Products = [
     },
     {
         id: 15,
-        nombre: 'Mesa centro',
+        nombre: 'Table one',
         categoria: 'Mesas',
         precio: 15000,
         img: "./img/mesa centro 1.jpg",
@@ -140,7 +142,7 @@ const Products = [
     },
     {
         id: 16,
-        nombre: 'Mesa centro',
+        nombre: 'Small table style',
         categoria: 'Mesas',
         precio: 25000,
         img: "./img/mesa centro 5.jpg",
@@ -149,7 +151,7 @@ const Products = [
     },
     {
         id: 17,
-        nombre: 'Mesa centro',
+        nombre: 'Tree table',
         categoria: 'Mesas',
         precio: 12000,
         img: "./img/mesa centro 3.jpg",
@@ -158,7 +160,7 @@ const Products = [
     },
     {
         id: 18,
-        nombre: 'Planta decoracion',
+        nombre: 'Desert plant',
         categoria: 'Varios',
         precio: 3200,
         img: "./img/planta decoracion 1.jpg",
@@ -204,13 +206,15 @@ const ItemListContainer = () => {
         
         {
             loading? 
-            <Spinner animation="border" />
-                :
-                <div className="row">
+            <Box sx={{ display: 'flex' }}>
+      <CircularProgress />
+    </Box>
+                           :
+                <div className="row flexdirection: center">
             
                     {
                         data.map((product) => (
-                            <div className="col-4" key={product.id}>
+                            <div className="col-sm-4" key={product.id}>
                                 <ItemCard nombre={product.nombre} informacion={product.informacion} img={product.img} precio={product.precio} stock={product.stock}/>
                             </div>
                         ))
