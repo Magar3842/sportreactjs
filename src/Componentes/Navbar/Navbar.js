@@ -15,8 +15,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import Carrito from '../Carrito/Carrito'
 
 
-
-const pages = ['Productos', 'Promociones', 'Checkout'];
+const pages = ['Home', 'Sillas', 'Sillones', 'Arte y varios', 'Checkout'];
 const settings = ['Profile', 'Account', 'Loguin', 'Logout'];
 
 const ResponsiveAppBar = () => {
@@ -93,7 +92,8 @@ const ResponsiveAppBar = () => {
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
+                  
+                  </MenuItem>
               ))}
             </Menu>
           </Box>
