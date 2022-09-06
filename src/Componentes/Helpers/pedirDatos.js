@@ -1,6 +1,6 @@
 import { stock } from "../BDProductos/BaseProductos"
 
-export const pedirDatos = () => {
+export const pedirDatos = ([]) => {
     return new Promise( (resolve, reject) => {
             // cuerpo de la promesa
             setTimeout(() => {

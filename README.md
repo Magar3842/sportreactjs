@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+Bienvenidos a DECOR-INSPIRE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[︎🔗 VER DEMO] ()
 
-## Available Scripts
+**"DECOR-INSPIRE" es una SAP que tiene como finalidad acercar a las personas elementos de decoracion de diseño y estilo variados para poder darle un toque calido y personal a sus hogares. Éste es el E-Commerce para vender dichos articulos de una manera interactiva y agil.
+Productos nacionales e importados son objeto de comercializacion abriendo las puertas a emprendedores y diseñadores para acceder a nuestro medio de comercializacion y promocionar sus productos.
 
-In the project directory, you can run:
+## Qué puedo hacer:
 
-### `npm start`
+- Ver el catálogo de productos disponibles.
+- Clasificar los articulos por categorías de articulos.
+- Ver dscripcion y mas informacion de cada articulo.
+- Agregar productos al carrito de compras.
+- Generar una orden de compra con el total a abonar.
+- Hacer el checkout de la compra y derivar a la pagina de pagos.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Dependencias utilizadas
 
-### `npm test`
+Esta app de React utiliza las siguientes dependencias:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+"dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.10.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.2.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "reactstrap": "^9.1.4",
+    "react-router-dom": "^6.3.0"
 
-### `npm run build`
+- [ReactJS](https://es.reactjs.org/) ^18.2.0 - Librería principal del proyecto.
+- [ReactStrap](https://reactstrap.github.io/?path=/docs/home-installation--page) ^9.1.4 - Creacion de la App.
+- [React Router DOM](https://reactrouter.com/docs/en/v6/getting-started/overview) ^6.3.0 - Navegación de la App.
+- [MUI](https://mui.com/material-ui/getting-started/overview/) Libreria de estilos y componentes.
+- [React Bootstrap](https://react-bootstrap.github.io/getting-started/introduction/) ^2.5.0 - Libreria de estilos y componentes.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
