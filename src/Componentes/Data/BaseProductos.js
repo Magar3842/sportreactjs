@@ -7,7 +7,49 @@ export const stock = [
         img: "./img/sillon 1 cuerpo amarillo.jpg",
         stock: 5,
         informacion: 'La estructura es de madera maciza estacionada, encolada y con refuerzos de escuderas que le dan una gran rigidez. Tapizado sobre Goma Espuma Soft de alta densidad. Cincha elástica Italiana ancha 6cm.',
-        descripcion: 'Medidas: Alto 0.765 cm x Ancho 0.68 cm x Profundidad 0.60 cm. Telas a eleccion y lustre a eleccion (Los muebles de madera y chapas naturales puede variar en sus vetas y tonalidades)'
+        descripcion: 'Medidas: Alto 0.765 cm x Ancho 0.68 cm x Profundidad 0.60 cm. Telas a eleccion y lustre a eleccion (Los muebles de madera y chapas naturales puede variar en sus vetas y tonalidades)',
+        lustre: [
+            {
+                valor: 'Wengue',
+                text: 'Wengue'
+            },
+            {
+                valor: 'Negro',
+                text: 'Negro'
+            },
+            {
+                valor: 'Nogal 3',
+                text: 'Nogal 3'
+            },
+            {
+                valor: 'Cerezo',
+                text: 'Cerezo'
+            },{
+                valor: 'Roble',
+                text: 'Roble'
+            }
+        ],
+        tela: [
+            {
+                valor: 'Tokio 2',
+                text: 'Tokio 2'
+            },
+            {
+                valor: 'Tokio 10',
+                text: 'Tokio 10'
+            },
+            {
+                valor: 'Vellu Perla',
+                text: 'Vellu Perla'
+            },
+            {
+                valor: 'Vellu Navy',
+                text: 'Vellu Navy'
+            },{
+                valor: 'Vellu Natural',
+                text: 'Vellu Natural'
+            }   
+        ]
     },
     {
         id: 2,
@@ -27,7 +69,49 @@ export const stock = [
         img: "./img/sillon 1 cuerpo rojo.jpg",
         stock: 5,
         informacion: 'La estructura es de madera maciza estacionada, encolada y con refuerzos de escuderas que le dan una gran rigidez. Tapizado sobre Goma Espuma Soft de alta densidad.',
-        descripcion: 'Medidas: Alto 0.765 cm x Ancho 0.68 cm x Profundidad 0.60 cm. Telas a eleccion y lustre a eleccion (Los muebles de madera y chapas naturales puede variar en sus vetas y tonalidades)'
+        descripcion: 'Medidas: Alto 0.765 cm x Ancho 0.68 cm x Profundidad 0.60 cm. Telas a eleccion y lustre a eleccion (Los muebles de madera y chapas naturales puede variar en sus vetas y tonalidades)',
+        lustre: [
+            {
+                valor: 'Wengue',
+                text: 'Wengue'
+            },
+            {
+                valor: 'Negro',
+                text: 'Negro'
+            },
+            {
+                valor: 'Nogal 3',
+                text: 'Nogal 3'
+            },
+            {
+                valor: 'Cerezo',
+                text: 'Cerezo'
+            },{
+                valor: 'Roble',
+                text: 'Roble'
+            }
+        ],
+        tela: [
+            {
+                valor: 'Tokio 2',
+                text: 'Tokio 2'
+            },
+            {
+                valor: 'Tokio 10',
+                text: 'Tokio 10'
+            },
+            {
+                valor: 'Vellu Stone',
+                text: 'Vellu Stone'
+            },
+            {
+                valor: 'Vellu Navy',
+                text: 'Vellu Navy'
+            },{
+                valor: 'Vellu Acero',
+                text: 'Vellu Acero'
+            }   
+        ]
     },
     {
         id: 4,
@@ -37,7 +121,51 @@ export const stock = [
         img: "./img/sillon 2 cuerpos marron.jpg",
         stock: 5,
         informacion: 'Producto de imagen Lounge Lino Pana con tratamiento antimancha. La estructura es de madera maciza estacionada, encolada y con refuerzos de escuderas que le dan una gran rigidez. Tapizado sobre Goma Espuma Soft de alta densidad y Vellón Siliconado. Cincha elástica Italiana 6cm.',
-        descripcion: 'Medidas: Ancho 1.80 mts. (aproximados) x profundidad 78cm x Altura 78cm. Costuras reforzadas con pespunte. Patas de madera maciza solo lustre Natural.'
+        descripcion: 'Medidas: Ancho 1.80 mts. (aproximados) x profundidad 78cm x Altura 78cm. Costuras reforzadas con pespunte. Patas de madera maciza solo lustre Natural.',
+        lustre: [
+            {
+                valor: 'Wengue',
+                text: 'Wengue'
+            },
+            {
+                valor: 'Negro',
+                text: 'Negro'
+            },
+            {
+                valor: 'Nogal 3',
+                text: 'Nogal 3'
+            },
+            {
+                valor: 'Cerezo',
+                text: 'Cerezo'
+            },
+            {
+                valor: 'Roble',
+                text: 'Roble'
+            }
+        ],
+        tela: [
+            {
+                valor: 'Tokio 2',
+                text: 'Tokio 2'
+            },
+            {
+                valor: 'Tokio 10',
+                text: 'Tokio 10'
+            },
+            {
+                valor: 'Vellu Stone',
+                text: 'Vellu Stone'
+            },
+            {
+                valor: 'Vellu Navy',
+                text: 'Vellu Navy'
+            },
+            {
+                valor: 'Vellu Acero',
+                text: 'Vellu Acero'
+            }   
+        ]
     },
     {
         id: 5,
@@ -47,7 +175,51 @@ export const stock = [
         img: "./img/sillon 3 cuerpos marron.jpg",
         stock: 5,
         informacion: 'Estructura:  madera maciza libre de nudos. Asiento: Conformado por estructura de resorte. Relleno: Resorte recubierto por placa de poliéster. Costura reforzada. Patas madera maciza lustrada.',
-        descripcion: 'Medidas: Ancho 1.80m x Profundidad 93cm x Altura 1.05m x Altura asiento 50cm (medidas aproximadas). Costuras reforzadas. Madera masiza libre de nudos.'
+        descripcion: 'Medidas: Ancho 1.80m x Profundidad 93cm x Altura 1.05m x Altura asiento 50cm (medidas aproximadas). Costuras reforzadas. Madera masiza libre de nudos.',
+        lustre: [
+            {
+                valor: 'Wengue',
+                text: 'Wengue'
+            },
+            {
+                valor: 'Negro',
+                text: 'Negro'
+            },
+            {
+                valor: 'Nogal 3',
+                text: 'Nogal 3'
+            },
+            {
+                valor: 'Cerezo',
+                text: 'Cerezo'
+            },
+            {
+                valor: 'Roble',
+                text: 'Roble'
+            }
+        ],
+        tela: [
+            {
+                valor: 'Tokio 2',
+                text: 'Tokio 2'
+            },
+            {
+                valor: 'Tokio 10',
+                text: 'Tokio 10'
+            },
+            {
+                valor: 'Vellu Stone',
+                text: 'Vellu Stone'
+            },
+            {
+                valor: 'Vellu Navy',
+                text: 'Vellu Navy'
+            },
+            {
+                valor: 'Vellu Petroleo',
+                text: 'Vellu Petroleo'
+            }   
+        ]
     },
     {
         id: 6,
@@ -147,7 +319,29 @@ export const stock = [
         img: "./img/mesa centro 1.jpg",
         stock: 30,
         informacion: 'La Línea Industrial se compone de muebles cuyo diseño combina lo natural de la madera rústica con el hierro macizo pintado color negro. Presenta esta línea de productos, que tiene su origen en el estilo fabril de la década del ‘50 en NY, acorde a los requerimientos estéticos y funcionales del usuario contemporáneo.',
-        descripcion:'Medidas: Ancho 900mm x Alto 400mm x Prof 600mm. Madera ATAKAMA melamina de 18mm de espesor. Patas de hierro macizo de 12 mm pintado color negro texturado'
+        descripcion:'Medidas: Ancho 900mm x Alto 400mm x Prof 600mm. Madera ATAKAMA melamina de 18mm de espesor. Patas de hierro macizo de 12 mm pintado color negro texturado',
+        lustre: [
+            {
+                valor: 'Wengue',
+                text: 'Wengue'
+            },
+            {
+                valor: 'Negro',
+                text: 'Negro'
+            },
+            {
+                valor: 'Nogal 3',
+                text: 'Nogal 3'
+            },
+            {
+                valor: 'Cerezo',
+                text: 'Cerezo'
+            },
+            {
+                valor: 'Roble',
+                text: 'Roble'
+            }
+        ]
     },
     {
         id: 16,
@@ -157,7 +351,29 @@ export const stock = [
         img: "./img/mesa centro 5.jpg",
         stock: 40,
         informacion: 'Mesa de estilo moderno y elegante en hierro y vidrio.',
-        descripcion:'Medidas: Ancho 900mm x Alto 400mm x Prof 600mm. Base de doble Vidrio templado de 6mm. Patas de hierro macizo de 12 mm pintado color negro texturado'
+        descripcion:'Medidas: Ancho 900mm x Alto 400mm x Prof 600mm. Base de doble Vidrio templado de 6mm. Patas de hierro macizo de 12 mm pintado color negro texturado',
+        lustre: [
+            {
+                valor: 'Wengue',
+                text: 'Wengue'
+            },
+            {
+                valor: 'Negro',
+                text: 'Negro'
+            },
+            {
+                valor: 'Nogal 3',
+                text: 'Nogal 3'
+            },
+            {
+                valor: 'Cerezo',
+                text: 'Cerezo'
+            },
+            {
+                valor: 'Roble',
+                text: 'Roble'
+            }
+        ]
     },
     {
         id: 17,
@@ -167,7 +383,29 @@ export const stock = [
         img: "./img/mesa centro 3.jpg",
         stock: 10,
         informacion: 'Original y de estilo combinable y reubicable.',
-        descripcion:'Varias bases apiladas esteticamente mezclando estilos de madera ATAKAMA y PARAISO.'
+        descripcion:'Varias bases apiladas esteticamente mezclando estilos de madera ATAKAMA y PARAISO.',
+        lustre: [
+            {
+                valor: 'Wengue',
+                text: 'Wengue'
+            },
+            {
+                valor: 'Negro',
+                text: 'Negro'
+            },
+            {
+                valor: 'Nogal 3',
+                text: 'Nogal 3'
+            },
+            {
+                valor: 'Cerezo',
+                text: 'Cerezo'
+            },
+            {
+                valor: 'Roble',
+                text: 'Roble'
+            }
+        ]
     },
     {
         id: 18,
