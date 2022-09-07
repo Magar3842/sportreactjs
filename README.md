@@ -1,6 +1,9 @@
 Bienvenidos a DECOR-INSPIRE
 
 [︎🔗 VER DEMO] ()
+- [Netlify] (https://singular-granita-237f2a.netlify.app/) enlace App sitio
+- [Github]  (https://github.com/Magar3842/sportreactjs) Repositorio GITHUB App.
+
 
 **"DECOR-INSPIRE" es una SAP que tiene como finalidad acercar a las personas elementos de decoracion de diseño y estilo variados para poder darle un toque calido y personal a sus hogares. Éste es el E-Commerce para vender dichos articulos de una manera interactiva y agil.
 Productos nacionales e importados son objeto de comercializacion abriendo las puertas a emprendedores y diseñadores para acceder a nuestro medio de comercializacion y promocionar sus productos.

@@ -2,7 +2,9 @@ import { useEffect, useState } from "react"
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
 import {pedirDatos} from "../Helpers/pedirDatos"
+import { useParams } from "react-router-dom";
 import ItemList from "../ItemList/ItemList";
+
 
 
 const ItemListContainer = () => {
@@ -10,32 +12,43 @@ const ItemListContainer = () => {
     const [productos, setProductos] = useState([]);
     const [loading, setLoading] = useState(true);
 
+    const {categoriaId} = useParams ()
+
+
     useEffect(() => {
+        setLoading(true)
+
+
         pedirDatos()
         .then( (res) => {
-            setProductos(res);
-            setLoading(false);
+            if (!categoriaId) {
+          setProductos(res)
+           } else {
+               setProductos( res.filter ((prod) => prod.categoria === categoriaId))
+            }   
+           
         })
         .catch( (error) => {
-            setLoading(false);
             console.log(error)
         })
-    }, [])
+        .finally (() => {
+            setLoading(false)
+        })
+
+    }, [categoriaId])
 
 
     return (
-        <>
+        <div>
          {
             loading? 
-            <Box sx={{ display: 'center' }}>
+            <Box sx={{ display: 'flex' }}>
       <CircularProgress />
     </Box>
                            :
-                <div className="row">
-                 <ItemList productos={productos}/>                   
-                </div>
-        }        
-        </>       
+     <ItemList productos={productos}/>                   
+            }        
+    </div>     
     )
 }
 
