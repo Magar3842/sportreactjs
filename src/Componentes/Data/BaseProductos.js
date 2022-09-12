@@ -146,6 +146,35 @@ export const stock = [
     },
     {
         id: 6,
+        nombre: 'Sillon Green Epic',
+        categoria: 'Sillones',
+        precio: 198500,
+        img: "/img/sillon 2 cuerpos verde.jpg",
+        stock: 3,
+        informacion: 'Estructura:  madera maciza libre de nudos. Asiento: Conformado por estructura de resorte. Relleno: Resorte recubierto por placa de poliéster. Costura reforzada. Patas madera maciza lustrada.',
+        descripcion: 'Medidas: Ancho 2.00m x Profundidad 93cm x Altura 1.05m x Altura asiento 50cm (medidas aproximadas). Costuras reforzadas. Madera masiza libre de nudos.',
+        opciones: [
+            {
+                valor: 'Wengue y tela Tokio 2',
+                text: 'Wengue y tela Tokio 2'
+            },
+            {
+                valor: 'Negro y tela Vellu Verde',
+                text: 'Negro y tela Vellu Verde'
+            },
+            {
+                valor: 'Nogal 3 y tela Vellu Natural',
+                text: 'Nogal 3 y tela Vellu Natural'
+            },
+            {
+                valor: 'Cerezo y Vellu Navy',
+                text: 'Cerezo y Vellu Navy'
+            }
+        
+        ]
+    },
+    {
+        id: 7,
         nombre: 'Ligth One',
         categoria: 'Iluminacion',
         precio: 48900,
@@ -169,7 +198,7 @@ export const stock = [
         ]
     },
     {
-        id: 7,
+        id: 8,
         nombre: 'Ligth smooth',
         categoria: 'Iluminacion',
         precio: 56500,
@@ -193,7 +222,7 @@ export const stock = [
         ]
         },
     {
-        id: 8,
+        id: 9,
         nombre: 'Ligth shadow',
         categoria: 'Iluminacion',
         precio: 25000,
@@ -217,7 +246,7 @@ export const stock = [
         ]
     },
     {
-        id: 9,
+        id: 10,
         nombre: 'Ligth tonic',
         categoria: 'Iluminacion',
         precio: 67000,
@@ -241,7 +270,7 @@ export const stock = [
         ]
     },
     {
-        id: 10,
+        id: 11,
         nombre: 'Ligth pinapple',
         categoria: 'Iluminacion',
         precio: 47000,
@@ -265,7 +294,7 @@ export const stock = [
         ]
     },
     {
-        id: 11,
+        id: 12,
         nombre: 'Ligth modern',
         categoria: 'Iluminacion',
         precio: 62500,
@@ -289,7 +318,7 @@ export const stock = [
         ]
     },
     {
-        id: 12,
+        id: 13,
         nombre: 'Sarah',
         categoria: 'Arteyvarios',
         precio: 15000,
@@ -313,7 +342,7 @@ export const stock = [
         ]
     },
     {
-        id: 13,
+        id: 14,
         nombre: 'Flower spring',
         categoria: 'Arteyvarios',
         precio: 7300,
@@ -337,7 +366,7 @@ export const stock = [
         ]
     },
     {
-        id: 14,
+        id: 15,
         nombre: 'Creation',
         categoria: 'Arteyvarios',
         precio: 25000,
@@ -361,7 +390,7 @@ export const stock = [
         ]
     },
     {
-        id: 15,
+        id: 16,
         nombre: 'Table one',
         categoria: 'Mesas',
         precio: 15000,
@@ -390,7 +419,7 @@ export const stock = [
         ]
     },
     {
-        id: 16,
+        id: 17,
         nombre: 'Small table style',
         categoria: 'Mesas',
         precio: 35000,
@@ -419,7 +448,7 @@ export const stock = [
         ]
     },
     {
-        id: 17,
+        id: 18,
         nombre: 'Tree table',
         categoria: 'Mesas',
         precio: 12000,
@@ -448,7 +477,7 @@ export const stock = [
         ]
     },
     {
-        id: 18,
+        id: 19,
         nombre: 'Desert plant',
         categoria: 'Arteyvarios',
         precio: 3200,
@@ -469,7 +498,7 @@ export const stock = [
         ]
     },
     {
-        id: 19,
+        id: 20,
         nombre: 'Pot plant',
         categoria: 'Arteyvarios',
         precio: 1200,
@@ -494,7 +523,7 @@ export const stock = [
         ]
     },
     {
-        id: 20,
+        id: 21,
         nombre: 'Mini plant',
         categoria: 'Arteyvarios',
         precio: 2200,
@@ -519,7 +548,7 @@ export const stock = [
         ]
     },
     {
-        id: 21,
+        id: 22,
         nombre: 'Almohadones',
         categoria: 'Arteyvarios',
         precio: 1200,
@@ -544,7 +573,7 @@ export const stock = [
         ]
     },
     {
-        id: 22,
+        id: 23,
         nombre: 'Juego de Te',
         categoria: 'Arteyvarios',
         precio: 15200,
@@ -565,7 +594,7 @@ export const stock = [
         ]
     },
     {
-        id: 23,
+        id: 24,
         nombre: 'Espejos',
         categoria: 'Arteyvarios',
         precio: 7200,
@@ -586,7 +615,7 @@ export const stock = [
         ]
     },
     {
-        id: 24,
+        id: 25,
         nombre: 'Reloj moderno',
         categoria: 'Arteyvarios',
         precio: 5200,
@@ -607,7 +636,7 @@ export const stock = [
         ]
     },
     {
-        id: 25,
+        id: 26,
         nombre: 'Compoteras',
         categoria: 'Arteyvarios',
         precio: 3200,
@@ -627,6 +656,31 @@ export const stock = [
             {
                 valor: '1000cc capacidad',
                 text: '1000cc capacidad'
+            }
+                               
+        ]
+    },
+    {
+        id: 27,
+        nombre: 'Cesto de ratan',
+        categoria: 'Arteyvarios',
+        precio: 5200,
+        img: "/img/cesto ratan.jpg",
+        stock: 20,
+        informacion: 'Cesto de ratan de mucha utilidad y decoracion.',
+        descripcion:'realizado en ratan de varias medidas de capacidad.',
+        opciones: [
+            {
+                valor: '50cm diametro',
+                text: '50cm  diametro'
+            },
+            {
+                valor: '80cm diametro',
+                text: '80cm diametro'
+            },
+            {
+                valor: '100cm diametro',
+                text: '100cm diametro'
             }
                                
         ]

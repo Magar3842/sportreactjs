@@ -16,7 +16,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
  function Carrito() {
   return (
     <IconButton aria-label="cart">
-      <StyledBadge color="primary">
+      <StyledBadge color="secondary">
       <ShoppingCartIcon/>
       </StyledBadge>
     </IconButton>

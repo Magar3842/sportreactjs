@@ -32,7 +32,7 @@ const ItemDetailContainer = () => {
     }, [])
 
     return (
-        <div>
+        <div className="item-detail-container">
 
         {
             loading? 
