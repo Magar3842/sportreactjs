@@ -5,6 +5,7 @@ import Counter from "./Counter"
 import Select from "./Select"
 
 
+
 const ItemDetail = ({item}) => {
 
     const { cart, addToCart, isInCart } = useCartContext()
@@ -19,6 +20,7 @@ const ItemDetail = ({item}) => {
             id: item.id,
             precio: item.precio,
             nombre: item.nombre,
+            imagen: item.img,
             opciones,
             cantidad,
             
@@ -28,28 +30,50 @@ const ItemDetail = ({item}) => {
 
             }
       return (
-        <div className="container my-6">
-            <img src={item.img}/>
-            <h3>{item.nombre}</h3>
-            <p>{item.descripcion}</p>
-            <p>{item.informacion}</p>
+        <div className="container my-5 grid">
+        <hr/>
+         <Link to="/" className="btn btn-dark">Volver al catalogo...</Link>
             <hr/>
-            <Select options={item.opciones} onSelect={setOpciones}/>
+            <div>
+            <h1>Detalle del producto</h1>
             <hr/>
-            <p>Categoria: {item.categoria}</p>
-            <h4> $ {item.precio}</h4>
-
+            <div className="container p-3">
+                <div className="row">
+                    <div className="col-sm-8">
+                        {/* <div className="text-center"> */}
+                        <img src={item.img} className="rounded mb-8 pt-4 shadow-md"/>
+                        {/* </div> */}
+                        <hr/>
+                        <h2>Descripcion</h2>
+                        <p>{item.informacion}</p>
+                        <p>{item.descripcion}</p>
+                        <Select options={item.opciones} onSelect={setOpciones}/>
+                    </div>
+                        <div>
+                        <hr/>
+                        <p>Nombre: {item.nombre}</p>
+                        <h4>Precio: ${item.precio}</h4>
+                        <hr/>
+                        <p>Categoria: {item.categoria}</p>
+                        </div>
+                </div>
+            </div>    
+        </div>
+              
             {
                 isInCart(item.id)
-                ?   <Link to="/cart" className="btn btn-success my-2">Finalizar compra</Link>
-                :   <Counter 
+                ?   <Link to="/cart" className="btn btn-dark my-2">Finalizar compra</Link>
+                :   <Counter
                         max={item.stock}
                         counter={cantidad}
                         setCounter={setCantidad}
                         handleAgregar={handleAgregar}
                     />
             }
-                       
+            <div>
+               <Link to="/" className="btn btn-dark my-2">Agregar mas productos</Link> 
+            </div>
+            
 
         </div>
     )

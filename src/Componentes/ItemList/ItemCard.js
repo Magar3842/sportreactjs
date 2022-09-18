@@ -29,7 +29,7 @@ const ItemCard = (props) => {
                     <ItemCount stock={stock} addToCart={addToCart}/>
                 </CardBody>
                 <CardFooter>
-                <Button variant="primary">$ {precio}</Button>
+                <Button variant="primary">${precio}</Button>
                 <hr></hr>
                 <Button variant="primary">Stock Disponible {stock}</Button>
                 </CardFooter>

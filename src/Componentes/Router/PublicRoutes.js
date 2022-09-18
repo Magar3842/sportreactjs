@@ -1,25 +1,24 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
-import LoguinScreen from '../Helpers/LoguinScreen'
-//import RegisterScreen from '../Helpers/NoEncontrada'
+import {LoginScreen} from '../Helpers/LoginScreen'
+//import {Register} from '../Helpers/Register'
 import Footer from '../Footer/Footer'
-import PublicNavBar from '../Navbar/PublicNavBar'
+import Hero from '../Hero/Hero'
 
-const PublicRoutes = () => {
+export const PublicRoutes = () => {
 
     return (
         
         <>
             {/* ROUTER PUBLICO */}
-         <PublicNavBar/>
-
+        <Hero/>
+        
         <Routes>
-        <Route path='/loguin' element={<LoguinScreen/>}/>
-        {/* <Route path='/register' element={<RegisterScreen/>}/> */}
-        <Route path='*' element={<Navigate to="/loguin"/>}/>
+        <Route path='/login' element={<LoginScreen/>}/>
+        {/* <Route path='/register' element={<Register/>}/>  */}
+        <Route path='*' element={<Navigate to="/login"/>}/>
         </Routes>
+        
         <Footer/>
-</>
+          </>
         )
 }
-
-export default PublicRoutes

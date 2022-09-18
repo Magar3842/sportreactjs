@@ -3,20 +3,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import { CartProvider } from './Componentes/Context/CartContext';
 import { LoginProvider} from './Componentes/Context/LoginContext';
-import AppRouter from './Componentes/Router/AppRouter';
+import {AppRouter} from './Componentes/Router/AppRouter';
 
  
 
-function App() {
+export const App = () => {
 
   return (
-    <LoginProvider>
+
+      <LoginProvider>
       <CartProvider>
-        <AppRouter />
+        <AppRouter/>
       </CartProvider>
     </LoginProvider>
-  );
+    
+  )
 
 }
-
-export default App;

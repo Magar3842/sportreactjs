@@ -3,6 +3,8 @@ import { Link } from "react-router-dom"
 const Item = ( {producto} ) => {
 
     return (
+
+        
     
         <div>
             <img src={producto.img}/>
@@ -10,7 +12,7 @@ const Item = ( {producto} ) => {
             <p>Precio:${producto.precio}</p>
             <p>Stock disponible: {producto.stock}</p>
             <Link to={`/item/${producto.id}`} className="btn btn-primary my-2">Mas Info..</Link>
-            
+                      
         </div>
         
     )

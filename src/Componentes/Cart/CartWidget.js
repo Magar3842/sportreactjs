@@ -1,19 +1,17 @@
 import { useContext } from 'react'
-import { BsFillCartCheckFill } from 'react-icons/bs'
+import {BiShoppingBag} from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../Context/CartContext'
 
 
-const CartWidget = () => {
+export const CartWidget = () => {
 
-    const { cartQuantity } = useContext(CartContext)
+    const { cartQuantity, cart } = useContext(CartContext)
 
     return (
-        <Link to="/cart">
-            <BsFillCartCheckFill/>
+        <Link to="/cart" className={`widget ${cart.length > 0 ? 'widget-visible' :''}`}>
+            <BiShoppingBag/>
             <span>{cartQuantity()}</span>
         </Link>
     )
 }
-
-export default CartWidget

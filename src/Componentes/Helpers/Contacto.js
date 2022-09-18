@@ -1,4 +1,4 @@
-const Contacto = () => {
+export const Contacto = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault()
@@ -8,7 +8,7 @@ const Contacto = () => {
 
     return (
         <div className="container my-5">
-            <h2>Contacto</h2>
+            <h2>Dejanos tu mensaje</h2>
             <hr></hr>
 
             <form onSubmit={handleSubmit}>
@@ -20,8 +20,18 @@ const Contacto = () => {
 
                 <button className="btn btn-primary" type="submit">Enviar</button>
             </form>
+            <br></br>
+            <h2>Suscribete al Newsletter</h2>
+            <hr></hr>
+            <form onSubmit={handleSubmit}>
+                <input 
+                    type={'email'}
+                    className='form-control my-2'
+                    // onChange={}
+                />
+
+                <button className="btn btn-primary" type="submit">Enviar</button>
+            </form>
         </div>
     )
 }
-
-export default Contacto
