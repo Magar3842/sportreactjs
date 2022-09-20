@@ -2,9 +2,9 @@ import { useEffect, useState } from "react"
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
 import { useParams } from "react-router-dom";
-import { pedirDatos } from "../Helpers/pedirDatos";
 import ItemDetail from "../ItemDetails/ItemDetail"
-
+import { doc, getDoc } from "firebase/firestore"
+import { db } from "../Services/configFirebase"
 
 const ItemDetailContainer = () => {
 
@@ -16,18 +16,16 @@ const ItemDetailContainer = () => {
         useEffect(() => {
             setLoading(true)
 
-        pedirDatos()
-        .then( (res) => {
-            setItem( res.find((prod) => prod.id === Number(itemId)))
-        })
-        .catch( (error) => {
-            console.log(error)
-        })
-        .finally (() => {
-            setLoading(false)
-        })
-                      
-        // setear el estado con un único producto
+        // 1.- Armar la referencia (sync)
+        const docRef = doc(db, 'productos', itemId)
+        // 2.- Llamar a la DB (async)
+        getDoc(docRef)
+            .then((doc) => {
+                setItem({id: doc.id, ...doc.data()})
+            })
+            .finally(() => {
+                setLoading(false)
+            })
 
     }, [])
 

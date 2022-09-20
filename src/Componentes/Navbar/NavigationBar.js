@@ -22,10 +22,10 @@ return (
 
                 <nav className="header-navigator">
                     <Link to='/' className="header-navlink">Ver todos</Link>
-                    <Link to='/productos/Sillones' className="header-navlink">Sillones y Sillas</Link>
-                    <Link to='/productos/Mesas' className="header-navlink">Mesas</Link>
-                    <Link to='/productos/Iluminacion' className="header-navlink">Iluminacion</Link>
-                    <Link to='/productos/Arteyvarios' className="header-navlink">Arte y varios</Link>
+                    <Link to='/productos/sillones' className="header-navlink">Sillones y Sillas</Link>
+                    <Link to='/productos/mesas' className="header-navlink">Mesas</Link>
+                    <Link to='/productos/iluminacion' className="header-navlink">Iluminacion</Link>
+                    <Link to='/productos/arteyvarios' className="header-navlink">Arte y varios</Link>
                     <Link to='/Contacto' className="header-navlink">Contacto</Link>
                     <Link to='/profile'className="header-navlink"><FaRegUser/>Perfil</Link>
                     </nav>

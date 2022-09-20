@@ -19,6 +19,8 @@ const Cart = () => {
         )
     }
 
+   
+
     return (
        
 <div className='container my-5'>
@@ -29,7 +31,7 @@ const Cart = () => {
     <div key={item.id} className='container my-5 '>
     <div className='row'>
         <div key={item.id} className='col-3 ' >
-        <img src={item.img} style={{ width: '12rem' }} alt="" />
+        <img src={item.imagen} style={{ width: '12rem' }} alt="" />
         </div>
         <div className='col-6 ' >
         <h4> {item.nombre} </h4>
@@ -48,7 +50,8 @@ const Cart = () => {
         <hr/>
     </div>
     </div>
-))}
+
+    ))}
  <h4> Total: ${cartTotal()} </h4>
  <p>Hasta 6 cuotas sin interes</p>
              <button className="btn btn-dark">Finalizar Compra</button>
