@@ -7,7 +7,7 @@ import {NavigationBar} from '../Navbar/NavigationBar'
 import {NotFoundComponent} from '../Helpers/NotFoundComponent'
 import Footer from '../Footer/Footer' 
 import {LoginScreen} from '../Helpers/LoginScreen';
-//import {Checkout} from '../Cart/Checkout'
+import Checkout from '../Cart/Checkout'
 
 export const PrivateRoutes = () => {
 
@@ -27,7 +27,7 @@ export const PrivateRoutes = () => {
             <Route path='/item/:itemId' element={<ItemDetailContainer/>}/> 
             <Route path='/cart' element={<Cart/>}/>
             <Route path='/Contacto' element={<Contacto/>}/> 
-            {/* <Route exact path='/checkout' element={ <Checkout /> } /> */}
+            <Route path='/checkout' element={ <Checkout /> }/>
             <Route path='*' element={<Navigate to="/"/>}/> 
             <Route path='/NoEncontrada' element={<NotFoundComponent/>}/> 
                     

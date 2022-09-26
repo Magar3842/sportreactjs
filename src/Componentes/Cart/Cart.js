@@ -2,6 +2,9 @@ import { useCartContext } from '../Context/CartContext'
 import { Link } from 'react-router-dom'
 
 
+
+
+
 const Cart = () => {
 
     const { cart, cartTotal, emptyCart, removeItem } = useCartContext()

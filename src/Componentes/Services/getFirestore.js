@@ -1,18 +1,16 @@
-import firebase from 'firebase/app'
-import 'firebase/firestore'
-
+import { initializeApp } from "firebase/app";
+import {getFirestore} from 'firebase/firestore'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyC_wCxDMcYWb1RMRAAgx5BadXhF66K_vsc",
-    authDomain: "e-commerce-vasquezloreto.firebaseapp.com",
-    projectId: "e-commerce-vasquezloreto",
-    storageBucket: "e-commerce-vasquezloreto.appspot.com",
-    messagingSenderId: "877413321823",
-    appId: "1:877413321823:web:ba50601dae1567de26dfea"
+  apiKey: "AIzaSyC7f6LWIKeL8fFf4T0M9FnlpliHwSzLhKA",
+  authDomain: "deco-inspire2022.firebaseapp.com",
+  projectId: "deco-inspire2022",
+  storageBucket: "deco-inspire2022.appspot.com",
+  messagingSenderId: "583010266897",
+  appId: "1:583010266897:web:bbdc4b8011f6b5392fe6b0",
+  measurementId: "G-GVZS2Z6T08"
 };
 
-const app = firebase.initializeApp(firebaseConfig);
-
-export function getFirestore(){
-    return firebase.firestore(app)
-}
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+export const db = getFirestore(app) 

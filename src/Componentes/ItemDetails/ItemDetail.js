@@ -55,6 +55,7 @@ const ItemDetail = ({item}) => {
                         <h4>Precio: ${item.precio}</h4>
                         <hr/>
                         <p>Categoria: {item.categoria}</p>
+                        <p>Stock disponible: {item.stock}</p>
                         </div>
                 </div>
             </div>    
