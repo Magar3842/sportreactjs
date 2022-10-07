@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Navigate } from "react-router-dom"
+import { Navigate, Link } from "react-router-dom"
 import { useCartContext } from "../Context/CartContext"
 import { addDoc, collection, getDocs, writeBatch, query, where, documentId } from 'firebase/firestore'
 import { db } from "../Services/configFirebase"
@@ -15,6 +15,7 @@ const Checkout = () => {
         nombre: '',
         email: '',
         direccion: '',
+        telefono: '',
     })
 
     const handleSubmit = async (e) => {
@@ -81,10 +82,14 @@ const Checkout = () => {
     if (orderId) {
         return (
             <div className="container my-5">
-                <h2>Compra exitosa!</h2>
+                <h2>Genial! Gracias por tu compra:</h2>
                 <hr/>
-                <p>Tu número de orden es: <strong>{orderId}</strong></p>
-            </div>
+                <p>Te enviaremos un correo cuando tu pedido salga de nuestro deposito. Tu número de orden es: <strong>{orderId}</strong></p>
+                <hr/>
+                <Link to="/" className="py-8">
+                <button className="btn btn-primary">Volver a la pagina</button>
+            </Link>
+                </div>
         )
     }
 
@@ -94,10 +99,12 @@ const Checkout = () => {
 
     return (
         <div className="container my-5">
-            <h2>Checkout</h2>
+            <h2>Completa tus datos</h2>
             <hr/>
-
+            <p>Para poder confirmar la compra ingresa tus datos:</p>
+            <hr/>
             <form onSubmit={handleSubmit}>
+            <p>Dejanos tu nombre completo:</p>
                 <input 
                     name="nombre"
                     onChange={handleInputChange}
@@ -106,26 +113,39 @@ const Checkout = () => {
                     className="my-3 form-control" 
                     placeholder="Tu nombre"
                 />
-
+<p>Carga un Email para contactarte:</p>
                 <input 
                     name="email"
                     onChange={handleInputChange}
                     value={values.email}
                     type={'email'} 
                     className="my-3 form-control" 
-                    placeholder="Email"
+                    placeholder="E-mail"
                 />
-
+<p>Informa una domicilio de envio:</p>
                 <input 
-                    name="direccion"
+                    name="domicilio"
                     onChange={handleInputChange}
-                    value={values.direccion}
+                    value={values.domicilio}
                     type={'text'} 
                     className="my-3 form-control" 
-                    placeholder="Dirección"
+                    placeholder="Domicilio"
                 />
-
-                <button type="submit" className="btn btn-primary">Enviar</button>
+<p>Dejanos un telefono de contacto:</p>
+                <input 
+                    name="telefono"
+                    onChange={handleInputChange}
+                    value={values.telefono}
+                    type={'number'} 
+                    className="my-3 form-control" 
+                    placeholder="Numero de telefono"
+                />
+                <hr/>
+                <Link to="/" className="py-8">
+                <button className="btn btn-primary">Atras</button>
+            </Link>
+            <hr/>
+            <button type="submit" className="btn btn-primary">Confirmar compra</button>
             </form>
 
         </div>

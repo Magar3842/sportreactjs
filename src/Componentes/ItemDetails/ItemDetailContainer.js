@@ -36,10 +36,10 @@ const ItemDetailContainer = () => {
             loading? 
             <Box sx={{ display: 'flex' }}>
       <CircularProgress />
-    </Box>
+          </Box> 
                            :
-            <ItemDetail item={item}/> 
-            } 
+            <ItemDetail item={item}/>  }
+               
         </div>
     )
 }

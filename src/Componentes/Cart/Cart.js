@@ -57,10 +57,12 @@ const Cart = () => {
     ))}
  <h4> Total: ${cartTotal()} </h4>
  <p>Hasta 6 cuotas sin interes</p>
-             <button className="btn btn-dark">Finalizar Compra</button>
+ <hr/>
+ <Link to='/'><button className="btn btn-dark">Agregar mas productos</button></Link>
+             {/* <button className="btn btn-dark">Agregar mas productos</button> */}
             <br/>
             <br/>
-            <Link to='/checkout'><button className="btn btn-dark">Check-Out</button></Link>
+            <Link to='/checkout'><button className="btn btn-dark">Iniciar checkout</button></Link>
             <br/>
             <br/>
             

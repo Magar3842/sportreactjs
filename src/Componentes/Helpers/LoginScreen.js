@@ -1,8 +1,5 @@
-import { useContext, useState } from "react"
+import { useContext, useState, Link} from "react"
 import { LoginContext } from "../Context/LoginContext"
-
-
-
 
 export const LoginScreen = () => {
 
@@ -30,8 +27,8 @@ export const LoginScreen = () => {
 
     return (
         <div className="sesion-container">
-        <h1>Iniciar Sesion</h1>
-         <form onSubmit={handleSubmit} className="container py-5">
+        <form onSubmit={handleSubmit} className="container py-5">
+         <h3>Iniciar Sesion</h3>
             <p>Email de registro</p>
                 <input 
                     type={'email'}
@@ -46,9 +43,11 @@ export const LoginScreen = () => {
                     value={pass}
                     onChange={handlePassChange}
                 />
-<h2>¿Olvidaste tu contraseña?</h2>
-                <button className="btn btn-secondary" type="submit">Iniciar sesion</button>
-            </form>
+        
+                <button className="btn btn-primary" type="submit">Iniciar sesion</button>
+                <br/> 
+                <br/> 
+                </form>
         </div>
     )
 }

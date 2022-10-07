@@ -4,10 +4,11 @@ import {Contacto} from '../Helpers/Contacto';
 import Cart from '../Cart/Cart';
 import { Routes, Route, Navigate } from 'react-router-dom'
 import {NavigationBar} from '../Navbar/NavigationBar'
-import {NotFoundComponent} from '../Helpers/NotFoundComponent'
+import NotFound from '../Helpers/NotFound'
 import Footer from '../Footer/Footer' 
 import {LoginScreen} from '../Helpers/LoginScreen';
 import Checkout from '../Cart/Checkout'
+import {Registro} from '../Helpers/Registro'
 
 export const PrivateRoutes = () => {
 
@@ -27,9 +28,10 @@ export const PrivateRoutes = () => {
             <Route path='/item/:itemId' element={<ItemDetailContainer/>}/> 
             <Route path='/cart' element={<Cart/>}/>
             <Route path='/Contacto' element={<Contacto/>}/> 
-            <Route path='/checkout' element={ <Checkout /> }/>
+            <Route path='/Checkout' element={ <Checkout /> }/>
+            <Route path='/Registro' element={ <Registro/> }/> 
             <Route path='*' element={<Navigate to="/"/>}/> 
-            <Route path='/NoEncontrada' element={<NotFoundComponent/>}/> 
+            <Route path='/NotFound' element={<NotFound/>}/> 
                     
         </Routes>
         <Footer/>

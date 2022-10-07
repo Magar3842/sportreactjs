@@ -6,6 +6,7 @@ import ItemList from "../ItemList/ItemList";
 import {db} from '../Services/configFirebase'
 import { collection, getDocs, query, where } from "firebase/firestore"
 
+
 const ItemListContainer = () => {
 
     const [productos, setProductos] = useState([]);
@@ -42,16 +43,21 @@ getDocs(q)
 
 
     return (
+<>
+
+       
         <div>
-         {
-            loading? 
-            <Box sx={{ display: 'flex' }}>
+        
+         {loading? 
+            <Box sx={{ display: 'grid' }}>
       <CircularProgress />
+    
     </Box>
                            :
-     <ItemList productos={productos}/>                   
+    <ItemList productos={productos}/>                   
             }        
-    </div>     
+    </div> 
+    </>    
     )
 }
 

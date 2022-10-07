@@ -9,7 +9,7 @@ import {AppRouter} from './Componentes/Router/AppRouter';
 
 export const App = () => {
 
-  return (
+ return (
 
       <LoginProvider>
       <CartProvider>

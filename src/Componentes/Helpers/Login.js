@@ -16,7 +16,7 @@ export const Login = ({stateUser,setStateUser}) => {
         <div>
             <h2>Loguin</h2>
                         <Button variant="success" onClick={startSesion}>Iniciar Sesion</Button>{' '}
-            
+                                                         
             </div>
     )
 }

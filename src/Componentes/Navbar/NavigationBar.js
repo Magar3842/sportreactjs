@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom'
-import {FaRegUser} from 'react-icons/fa'
 import {CartWidget} from '../Cart/CartWidget';
 import {useLoginContext} from '../Context/LoginContext'
 import Button from 'react-bootstrap/Button';
+
+
 
 
 export const NavigationBar = () => {
@@ -15,8 +16,8 @@ return (
             <div className="header-container">
                 <h1 className='header-title'>DECO-INSPIRE</h1>
             <div className='nav-user'>
-                <small>Bienvenido: {user.user}</small>
-                {/* <button onClick={logout} className='btn btn-dark'>Logout</button> */}
+               <small>Bienvenido: {user.user}</small>
+               
                 <Button onClick={logout} variant="outline-success">Logout</Button>{' '}
             </div>    
 
@@ -27,11 +28,11 @@ return (
                     <Link to='/productos/iluminacion' className="header-navlink">Iluminacion</Link>
                     <Link to='/productos/arteyvarios' className="header-navlink">Arte y varios</Link>
                     <Link to='/Contacto' className="header-navlink">Contacto</Link>
-                    <Link to='/profile'className="header-navlink"><FaRegUser/>Perfil</Link>
+                    <Link to='/Registro' className="header-navlink">Registro</Link>
+                    <CartWidget/>
                     </nav>
-                <CartWidget/>
-                </div>
-             </header>
+                    </div>
+               </header>
              </>
   )
 }
